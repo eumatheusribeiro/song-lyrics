@@ -4,10 +4,10 @@ const songsContainer = document.querySelector('#songs-container')
 const prevAndNextContainer = document.querySelector('#prev-and-next-container')
 
 const API_URL = `https://api.lyrics.ovh`
-const fetchSongs = term => {
-    fetch(`${API_URL}/suggest/${term}`)
-        .then(response => response.json()
-            .then(data => { console.log(data) }))
+const fetchSongs = async term => {
+    const response = await fetch(`${API_URL}/suggest/${term}`)
+    const data = await response.json()
+    console.log(data)
 }
 form.addEventListener('submit', event => {
     event.preventDefault()
