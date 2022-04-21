@@ -70,3 +70,7 @@ songsContainer.addEventListener('click', event => {
         fetchLyrics(artist, songTitle)
     }
 })
+
+function colorTheme() {
+    document.querySelector('body').classList.toggle("dark-theme")
+}

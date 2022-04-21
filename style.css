@@ -11,7 +11,7 @@ li {
 }
 
 body {
-  background-color: #10161B;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -101,7 +101,7 @@ form button {
   margin: 30px auto;
   max-width: 100%;
   width: 500px;
-  background-color: #10161B;
+  background-color: white;
 }
 
 .song {
@@ -131,17 +131,51 @@ form button {
 }
 
 .song-artist {
-  color: white;
+  color: black;
   opacity: .4;
   max-width: 400px;
 }
 
 .lyrics-container {
-  color: white;
+  color: black;
   opacity: .4;
 }
 
 .lyrics {
   margin-top: 20px;
   line-height: 1.5;
+}
+
+.theme {
+  margin-top: -70px;
+  margin-bottom: 70px;
+  margin-right: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.theme .button-theme {
+  background-color: transparent;
+  border: none;
+}
+
+.dark-theme {
+  background-color: #10161B;
+  color: black;
+}
+
+.dark-theme .songs-container {
+  background-color: #10161B;
+}
+
+.dark-theme .song-artist {
+  color: white;
+  opacity: .4;
+  max-width: 400px;
+}
+
+.dark-theme .lyrics-container {
+  color: white;
+  opacity: .4;
 }
