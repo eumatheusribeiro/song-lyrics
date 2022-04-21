@@ -19,7 +19,7 @@ Site para pesquisa de letra músicas
 
 ## Autores
 
-- [@Matheus Ribeiro](https://github.com/eu)
+- [@Matheus Ribeiro](https://github.com/eumatheusribeiro)
 - [@Gabriel Rodrigues](https://github.com/Gabrirodri) 
 
 
