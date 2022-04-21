@@ -16,6 +16,7 @@ const getMoreSongs = async url => {
 }
 
 const insertSongsIntoPage = songsInfo => {
+    document.querySelector('#loading').classList.toggle("not-active")
     songsContainer.innerHTML = songsInfo.data.map(song =>
         `<li class="song">
         <span class="song-artist"><strong>${song.artist.name}</strong> - ${song.title}</span>
