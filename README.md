@@ -7,6 +7,7 @@ Site para pesquisa de letra músicas
 ## Funcionalidades
 
 - Retorno de letra de musicas para consulta
+- Temas dark e light
 
 
 ## Stack utilizada
