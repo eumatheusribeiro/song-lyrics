@@ -179,3 +179,7 @@ form button {
   color: white;
   opacity: .4;
 }
+
+.not-active {
+  display: none;
+}

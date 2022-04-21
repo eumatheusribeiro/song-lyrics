@@ -73,4 +73,6 @@ songsContainer.addEventListener('click', event => {
 
 function colorTheme() {
     document.querySelector('body').classList.toggle("dark-theme")
+    document.querySelector('#light').classList.toggle("not-active")
+    document.querySelector('#dark').classList.toggle("not-active")
 }
