@@ -41,6 +41,7 @@ const fetchSongs = async term => {
 }
 const handleFormSubmit = event => {
     if (searchInput.value !== '') {
+        songsContainer.innerHTML = ''
         loading.classList.remove("not-active")
     }
     event.preventDefault()
