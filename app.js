@@ -2,6 +2,7 @@ const form = document.querySelector('#form')
 const searchInput = document.querySelector('#search')
 const songsContainer = document.querySelector('#songs-container')
 const prevAndNextContainer = document.querySelector('#prev-and-next-container')
+const loading = document.querySelector('#loading')
 
 const API_URL = `https://api.lyrics.ovh`
 
@@ -21,7 +22,7 @@ const insertNextAndPrevButtons = ({ prev, next }) => {
             `
 }
 const insertSongsIntoPage = ({ data, prev, next }) => {
-    document.querySelector('#loading').classList.add("not-active")
+    loading.classList.add("not-active")
     songsContainer.innerHTML = data.map(({ artist: { name }, title }) =>
         `<li class="song">
         <span class="song-artist"><strong>${name}</strong> - ${title}</span>
@@ -39,6 +40,9 @@ const fetchSongs = async term => {
     insertSongsIntoPage(data)
 }
 const handleFormSubmit = event => {
+    if(!searchInput) {
+        loading.classList.remove("not-active")
+    }
     event.preventDefault()
     const searchTerm = searchInput.value.trim()
     searchInput.value = ''
