@@ -126,7 +126,12 @@ form button {
 }
 
 .warning-message {
-  color: #EA2234;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f5a9af;
+  color: #a02c36;
+  border: 1px solid #da7c84;
+  border-radius: 5px;
   text-align: center;
 }
 
