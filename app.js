@@ -40,7 +40,7 @@ const fetchSongs = async term => {
     insertSongsIntoPage(data)
 }
 const handleFormSubmit = event => {
-    if(!searchInput) {
+    if(searchInput.value !== '') {
         loading.classList.remove("not-active")
     }
     event.preventDefault()
