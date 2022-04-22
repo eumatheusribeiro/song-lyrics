@@ -40,7 +40,7 @@ const fetchSongs = async term => {
     insertSongsIntoPage(data)
 }
 const handleFormSubmit = event => {
-    if(searchInput.value !== '') {
+    if (searchInput.value !== '') {
         loading.classList.remove("not-active")
     }
     event.preventDefault()
@@ -49,6 +49,7 @@ const handleFormSubmit = event => {
     searchInput.focus()
     if (!searchTerm) {
         songsContainer.innerHTML = `<li class="warning-message">Por favor, digite um termo valido</li>`
+        prevAndNextContainer.innerHTML = ``
         return
     }
     fetchSongs(searchTerm)
